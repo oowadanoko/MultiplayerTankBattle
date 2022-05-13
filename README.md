@@ -1,4 +1,4 @@
-# MultiplayerTankBattle
+# 多人坦克对战游戏
 ## 简介
 &emsp;&emsp;本项目是在学习[罗培羽老师的《Unity3D网络游戏实战（第2版）》](https://github.com/luopeiyu/unity_net_book)时制作的多人坦克对战游戏。**但本项目的核心并不是在游戏而是在于网络**。本项目从底层的Socket通信开始，逐步实现了一个通用易用的网络框架，并使用该网络框架制作网络游戏。
 > 本项目的实现与书中存在不符的地方。例如本项目服务端使用`System.Text.Json.JsonSerializer`类实现JSON数据的序列号与反序列号。该类是在.NET Core 3.0才引入的新类，更早的版本需要手动导入程序集。并且该类默认只序列化公共属性而不序列化字段，如要序列化字段需要在字段前加上特性`[JsonInclude]`。
